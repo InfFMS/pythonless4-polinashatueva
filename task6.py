@@ -8,4 +8,15 @@
 # 25 15
 # Вывод:
 # 5 3
-
+def help(m,n):
+    if m >n:
+        a = m%n
+        b = n/a
+        c = m/a
+    if m<n:
+        a = n%m
+        b = n/a
+        c = m/a
+    return(a,b)
+m = int(input())
+n = int(input())
