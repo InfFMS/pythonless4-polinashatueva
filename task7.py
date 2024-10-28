@@ -2,3 +2,12 @@
 # которая принимает в качестве аргументов три натуральных числа,
 # и возвращает значение True, если существует невырожденный треугольник
 # со сторонами side1, side2, side3, или False в противном случае.
+def is_valid_triangle(a,b,c):
+    if a+b>c or a+c>b or b+c>a:
+        return (a,b,c,"true")
+    else:
+        return("false")
+a = int(input())
+b =int(input())
+c = int(input())
+print(is_valid_triangle(a,b,c))

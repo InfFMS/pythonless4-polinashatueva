@@ -2,11 +2,15 @@
 # наибольший общий делитель двух натуральных чисел
 # На входе два числа, на выходе их НОД.
 
-def cat(a,b):
-    if a>b:
-        a = a%b
-    if b<a:
-        b = b%a
+def kiiiit(a, b):
+    while a != 0 and b != 0:
+        if a > b:
+            a = a % b
+        else:
+            b = b % a
+    return (a + b)
+
+
 a = int(input())
 b = int(input())
-print(cat(a,b))
+print(kiiiit(a, b))
