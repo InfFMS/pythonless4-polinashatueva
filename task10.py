@@ -12,3 +12,15 @@
 # Объедините эти две подзадачи, получите ответ.
 
 
+def oke(a):
+    if a== 1:
+        return True
+    elif a%2 ==0:
+        return oke(a//2)
+    else:
+        return False
+a = int(input())
+if oke(a):
+    print("yes")
+else:
+    print("nope")

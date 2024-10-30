@@ -7,3 +7,14 @@
 # Вывод:
 # 2*3*3*3*7
 
+def oke(n):
+    a = 2
+    s =("")
+    while n>1:
+        while n%a ==0:
+            s+=str(a)+"*"
+            n //=a
+        a +=1
+    return s[:-1]
+n = int(input())
+print(oke(n))
