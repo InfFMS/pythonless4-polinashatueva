@@ -7,14 +7,14 @@
 # Вывод:
 # 2*3*3*3*7
 
-def kakayrekursia(a):
-    b= 2
-    c =""
-    while n >1:
-        while n %b==0:
-            c+=str(b)+"*"
-            a //=1
-        b+=1
-    return c[:-1]
-a = int(input())
-print(kakayrekursia(a))
+def oke(n):
+    a = 2
+    s =("")
+    while n>1:
+        while n%a ==0:
+            s+=str(a)+"*"
+            n //=a
+        a +=1
+    return s[:-1]
+n = int(input())
+print(oke(n))

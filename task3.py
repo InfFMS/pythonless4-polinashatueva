@@ -14,7 +14,7 @@ def fun(n):
     b=n%100-a
     c=n%1000-b-a
     d=n%10000-c-b-a
-    print(D.get(d),C.get(c),B.get(b),A.get(a))
+    print(D.get(d),C.get(c),B.get(b),A.get(a),sep = "")
 
 
 n = int(input())
